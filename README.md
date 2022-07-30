@@ -6,7 +6,7 @@
 -----------------------------------------
 ## Deployment:
 
-### Final commit and deployment currently do not have scoreboard functionality, but will be updated for this at a later date.
+### Due to a time constraint, I decided to abandon a redirect to a separate, dedicated scoreboard page. Final commit and deployment currently do not have scoreboard functionality (beyond a title and a "null" return), but will be updated for this at a later date.
 ------------------------------
 ## Resources:
 
