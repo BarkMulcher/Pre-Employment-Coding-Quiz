@@ -12,8 +12,10 @@
 
 ### Inline Screenshot: 
 
-### GitHub repository link: 
+### GitHub repository link: https://github.com/BarkMulcher/Pre-Employment-Coding-Quiz
 
-### Deployed application link: 
+### Deployed application link: https://barkmulcher.github.io/Pre-Employment-Coding-Quiz/
 
 ### Screenshot link: 
+
+### Demonstration .gif link: https://drive.google.com/file/d/132oQ_DekG5Wk-dSF_90PiioUKHSKQxOy/view
