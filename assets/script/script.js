@@ -126,12 +126,13 @@ function quizComplete() {
     questionContainer.appendChild(displayComplete2);
     //ensure timer has not run out
     // also made remaining time be the score
-    if (timeRemaining => 0) {
+    if (timeRemaining >= 0) {
         var timeRemainingAtEnd = timeRemaining;
         var displayComplete3 = document.createElement("p");
         questionContainer.appendChild(displayComplete3);
         clearInterval(interval);
         displayComplete2.textContent = "Congratulations. Your score is: " + timeRemainingAtEnd;
+        displayComplete2.textContent = "SCOREBOARD:";
     }
     
     //create score form text
@@ -143,7 +144,7 @@ function quizComplete() {
     questionContainer.appendChild(nameSubmitText);
 
     //create form field
-    var nameSubmitForm = document.createElement("input");
+    let nameSubmitForm = document.createElement("input");
     nameSubmitForm.setAttribute("type", 'text');
     nameSubmitForm.setAttribute('id', 'initials');
     nameSubmitForm.textContent = "";
@@ -168,23 +169,51 @@ function quizComplete() {
         } else {
             //clear form
             nameSubmitForm.value = "";
-            var yourScore = {
-                initials: initials,
-                score: timeRemaining,
+            let yourScore = {
+                initials: nameEntry,
+                score: timeRemaining
             }
             console.log(yourScore);
-            var bestGame = localStorage.getItem("bestGame");
+            let bestGame = localStorage.getItem("bestGame");
             if (bestGame === null) {
                 bestGame = [];
             } else {
                 bestGame = JSON.parse(bestGame);
             }
-            bestGame.push(bestGame);
-            var newScore = JSON.stringify(bestGame);
-            localStorage.setItem("bestGame", newScore);
-            window.location.replace("C:\Users\luke.DESKTOP-R9DJT4N\Desktop\Dev\codingquiz\scores.html");
+            var scoreBoard = document.createElement("scoreBoard");
+            scoreBoard.setAttribute("id", "scoreBoard");
+            displayComplete3.appendChild(scoreBoard);
+            //1) store score
+            const newScore = JSON.stringify(bestGame);
+            localStorage.setItem(bestGame, newScore);
+            //2) retrieve score
+            let scoreBoardText = localStorage.getItem(bestGame);
+            
+            scoreBoard.textContent = scoreBoardText;
+            //3)?? profit?
+
+
+            
+            
+            
+            
+                        
+
+            
+            
+            
+            
+
+
+
+             //couldn't get submit button to redirect w below code:
+             //so changed to same page (suboptimal)
+            // var newScore = JSON.stringify(bestGame);//
+            // localStorage.setItem("bestGame", newScore);//
+           
+            // window.location.href="./scores.html";
         }
-    })
+    });
 }
 
 
