@@ -123,6 +123,7 @@ function quizComplete() {
     //create completion text
     var displayComplete2 = document.createElement("p");
     displayComplete2.setAttribute("id", "displayComplete2");
+    displayComplete2.setAttribute('style', 'white-space: pre;');
     questionContainer.appendChild(displayComplete2);
     //ensure timer has not run out
     // also made remaining time be the score
@@ -131,8 +132,8 @@ function quizComplete() {
         var displayComplete3 = document.createElement("p");
         questionContainer.appendChild(displayComplete3);
         clearInterval(interval);
-        displayComplete2.textContent = "Congratulations. Your score is: " + timeRemainingAtEnd;
-        displayComplete2.textContent = "SCOREBOARD:";
+        displayComplete2.textContent = "Congratulations. Your score is: " + timeRemainingAtEnd + "\n SCOREBOARD:";
+        // displayComplete2.textContent += "SCOREBOARD:";
     }
     
     //create score form text
