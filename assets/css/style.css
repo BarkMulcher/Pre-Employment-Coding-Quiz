@@ -1,0 +1,104 @@
+
+body {
+    font-family: "oswald";
+    background-color: rgb(107, 134, 157);
+}
+
+body a {
+    color: aliceblue;
+}
+
+#clock, #time {
+    font-weight: 600;
+    float: right;
+}
+
+.card-title {
+    font-family: "oswald";
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: darkslategray;
+    margin: 80px;
+}
+
+#questionsContainer {
+    font-size: 30px;
+    display: grid;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+#start-btn {
+    font-family: "genos";
+    display: flex; 
+    align-items: center;
+    border: none;
+    margin-top: 300px;
+    color: rgb(41, 129, 41);
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    font-size: 26px;
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    box-shadow: 0 8px gray;
+}
+
+#start-btn:active {
+    background-color: #fda085;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+#createDiv {
+    border-top: 20px solid lightgray;
+}
+
+
+li {
+    list-style-type: none;
+    background-color: rgb(177, 37, 177);
+    margin-top: 8px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: fit-content;
+    color: white;
+}
+
+#formText {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family:'genos';
+}
+
+#initials {
+    width: 300px;
+    font-size: 25px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    color: rebeccapurple;
+    background-image: linear-gradient(to top, green 0%, #fda085 51%, #f6d365 100%);
+}
+
+#submit {
+    display: flex;
+    height: 45px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(to right, blue 0%, #fda085 51%, #f6d365 100%);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    color:#d25431
+}
+
