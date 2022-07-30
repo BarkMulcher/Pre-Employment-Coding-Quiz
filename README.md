@@ -18,4 +18,4 @@
 
 ### Screenshot link: https://github.com/BarkMulcher/Pre-Employment-Coding-Quiz/blob/main/quizscreenshot.png
 
-### Demonstration .gif link: ![](https://drive.google.com/file/d/132oQ_DekG5Wk-dSF_90PiioUKHSKQxOy/view)
+###  ![Demonstration .gif link:](https://github.com/BarkMulcher/Pre-Employment-Coding-Quiz/blob/main/Coding%20Quiz!.gif = 400x400)
